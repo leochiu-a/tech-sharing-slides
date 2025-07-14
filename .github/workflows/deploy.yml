@@ -44,10 +44,12 @@ jobs:
 
       - name: Build all workspaces
         run: |
-          pnpm --filter "./slides/*" run build
           for ws in slides/*; do
+            ws_name=$(basename "$ws")
+            echo "Building $ws_name"
+            pnpm --filter "./slides/$ws_name" run build -- --base=/tech-sharing/$ws_name/
+
             if [ -d "$ws/dist" ]; then
-              ws_name=$(basename "$ws")
               mkdir -p "_gh-pages/$ws_name"
               cp -r "$ws/dist/." "_gh-pages/$ws_name/"
             fi
