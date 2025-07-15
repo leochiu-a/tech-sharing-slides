@@ -6,23 +6,10 @@ interface Slide {
 }
 
 /**
- * Build slides with baseUrl
- */
-const buildSlides = (slides: Slide[]) => {
-  const baseUrl = import.meta.env.VITE_BASE_URL || '/'
-
-  return slides.map((slide) => ({
-    ...slide,
-    image: `${baseUrl}${slide.image}`,
-    url: `${baseUrl}${slide.url}`,
-  }))
-}
-
-/**
  * Get slides
  */
 export function getSlides() {
-  return buildSlides([
+  return [
     {
       title: 'Web Vitals in Next.js',
       url: 'how-to-optimize-web-vital-in-nextjs/',
@@ -41,5 +28,5 @@ export function getSlides() {
       description: 'TypeScript 進階應用與實作。',
       image: 'images/typescript-workshop.png',
     },
-  ])
+  ]
 }
