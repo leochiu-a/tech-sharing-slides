@@ -1,5 +1,3 @@
-const baseUrl = import.meta.env.VITE_BASE_URL || '/'
-
 interface Slide {
   title: string
   url: string
@@ -11,6 +9,8 @@ interface Slide {
  * Build slides with baseUrl
  */
 const buildSlides = (slides: Slide[]) => {
+  const baseUrl = import.meta.env.VITE_BASE_URL || '/'
+
   return slides.map((slide) => ({
     ...slide,
     image: `${baseUrl}${slide.image}`,
