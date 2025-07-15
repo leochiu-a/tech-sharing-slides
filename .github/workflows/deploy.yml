@@ -46,8 +46,7 @@ jobs:
         run: |
           for ws in slides/*; do
             ws_name=$(basename "$ws")
-            echo "Building $ws_name"
-            pnpm --filter "./slides/$ws_name" run build -- --base=/tech-sharing/$ws_name/
+            pnpm --filter "./slides/$ws_name" run build --base /tech-sharing-slides/$ws_name/
 
             if [ -d "$ws/dist" ]; then
               mkdir -p "_gh-pages/$ws_name"
