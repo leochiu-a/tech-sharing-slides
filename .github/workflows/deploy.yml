@@ -49,7 +49,7 @@ jobs:
 
       - name: Build slide decks app as index
         run: |
-          pnpm --filter ./slide-decks run build --base /tech-sharing-slides
+          ENV=production pnpm --filter ./slide-decks run build
           mkdir -p "_gh-pages"
           cp -r slide-decks/dist/. "_gh-pages/"
 
