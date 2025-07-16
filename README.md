@@ -1,4 +1,16 @@
 # 技術分享
 
-- [為什麼使用 Turborepo 同時需要使用 pnpm workspace？](https://github.com/leochiu-a/tech-sharing-slides/tree/main/%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8%20Turborepo%20%E5%90%8C%E6%99%82%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8%20pnpm%20workspace%EF%BC%9F)
-- [從 Next.js 的角度了解如何優化 Web Vital](https://github.com/leochiu-a/tech-sharing-slides/tree/main/%E5%BE%9E%20Next.js%20%E7%9A%84%E8%A7%92%E5%BA%A6%E4%BA%86%E8%A7%A3%E5%A6%82%E4%BD%95%E5%84%AA%E5%8C%96%20Web%20Vital)
+這個 repository 收錄了我過去在不同時間點所做的技術分享簡報，希望透過這些內容能對開發者有所幫助，也紀錄自己一路上的學習與成長。
+
+🔗 線上預覽連結： [leochiu-a.github.io/tech-sharing-slides](https://leochiu-a.github.io/tech-sharing-slides/)
+
+## 📂 簡報主題一覽（持續更新中）
+
+- [Web Vitals in Next.js](https://leochiu-a.github.io/tech-sharing-slides/how-to-optimize-web-vital-in-nextjs/1)：從 Next.js 的角度了解如何優化 Core Web Vitals
+- [pnpm & turborepo](https://leochiu-a.github.io/tech-sharing-slides/pnpm-workspace-and-turborepo/1)：使用 pnpm workspace 跟 Turborepo 管理 monorepo
+- [TypeScript Workshop](https://leochiu-a.github.io/tech-sharing-slides/typescript-workshop/)：入門 TypeScript 的 workshop 簡報
+
+## Tech Stack
+
+- Slidev
+- pnpm workspace
