@@ -1,5 +1,5 @@
 <template>
-  <Card class="group hover:shadow-lg transition-all duration-200 cursor-pointer">
+  <Card class="group hover:shadow-lg transition-all duration-200 cursor-pointer" @click="openSlide">
     <div class="relative overflow-hidden rounded-t-lg">
       <img
         :src="image || '/placeholder.svg'"
@@ -36,7 +36,7 @@ import { Calendar, User } from 'lucide-vue-next'
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
-defineProps<{
+const props = defineProps<{
   title: string
   image?: string
   description?: string
@@ -44,4 +44,11 @@ defineProps<{
   author: string
   date: string
 }>()
+
+const openSlide = () => {
+  const baseUrl = import.meta.env.BASE_URL || '/'
+  // Remove trailing slash from baseUrl if it exists, and ensure proper URL construction
+  const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl
+  window.open(`${cleanBase}/${props.url}`, '_blank')
+}
 </script>
