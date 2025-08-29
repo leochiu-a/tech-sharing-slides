@@ -1,5 +1,5 @@
 ---
-theme: Default
+theme: default
 title: Git PR AI - Complete AI-Powered Git Workflow Automation
 info: Execute AI-powered git commands in a single line - no need to switch between tools or write prompts manually
 highlighter: shiki
