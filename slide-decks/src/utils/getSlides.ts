@@ -1,32 +1,29 @@
-interface Slide {
-  title: string
-  url: string
-  description: string
-  image: string
+import slidesData from 'virtual:slides-data'
+
+export function getSlides() {
+  try {
+    if (slidesData && slidesData.length > 0) {
+      return slidesData.map((slide) => ({
+        title: slide.frontmatter.title || slide.path,
+        url: slide.path,
+        description: slide.frontmatter.info || 'No description available',
+        image: slide.frontmatter.background || 'https://picsum.photos/200/300',
+        author: 'John Doe',
+        date: '2021-01-01',
+        theme: slide.frontmatter.theme,
+        transition: slide.frontmatter.transition,
+        class: slide.frontmatter.class,
+      }))
+    }
+  } catch (error) {
+    console.error('Error reading slides frontmatter:', error)
+  }
+
+  return []
 }
 
-/**
- * Get slides
- */
-export function getSlides() {
-  return [
-    {
-      title: 'Web Vitals in Next.js',
-      url: 'how-to-optimize-web-vital-in-nextjs/',
-      description: '最佳化 Next.js 的 Web Vitals 實戰經驗分享。',
-      image: 'images/how-to-optimize-web-vital-in-nextjs.png',
-    },
-    {
-      title: 'pnpm & turborepo',
-      url: 'pnpm-workspace-and-turborepo/',
-      description: 'pnpm 與 turborepo 的 monorepo 實戰。',
-      image: 'images/pnpm-workspace-and-turborepo.png',
-    },
-    {
-      title: 'TypeScript Workshop',
-      url: 'typescript-workshop/',
-      description: 'TypeScript 進階應用與實作。',
-      image: 'images/typescript-workshop.png',
-    },
-  ]
+if (import.meta.hot) {
+  import.meta.hot.accept('virtual:slides-data', (newSlidesData) => {
+    console.log('Slides data updated')
+  })
 }
