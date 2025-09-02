@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preview": "slidev-workspace preview",
+    "build": "slidev-workspace build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "slidev-workspace": "^0.1.0"
   },
   "keywords": [],
   "author": "",
