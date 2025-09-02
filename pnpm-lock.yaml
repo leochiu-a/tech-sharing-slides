@@ -27,8 +27,8 @@ importers:
   .:
     dependencies:
       slidev-workspace:
-        specifier: ^0.1.6
-        version: 0.1.6(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3)
+        specifier: ^0.1.7
+        version: 0.1.7(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3)
 
   slides/git-pr-ai:
     dependencies:
@@ -2721,8 +2721,8 @@ packages:
     resolution: {integrity: sha512-ndMD27+gUNYt9aXrb4/0vSBHKP007mpD2eCJppzhqXDG1DmN0Q6I6iFz+QvIjOPDKzzPjoYZbsWp6lPLJjgs9g==}
     engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
 
-  slidev-workspace@0.1.6:
-    resolution: {integrity: sha512-HBMeVCJ0FQC1teTI/Y14eO5OgyVMgiklqpa9uq8W366Fb020nWMn6l9xTD1C1D0r1lJV2uTREVnvZgleem11rA==}
+  slidev-workspace@0.1.7:
+    resolution: {integrity: sha512-PW5bZvneFHmKBAfyqlUnH2EzrZKfRNszzFei+5U5DQax4pQsx77SdiZh5TDjjwQHsccswm+1N1FlPSs/YwlD0g==}
     hasBin: true
 
   source-map-js@1.2.1:
@@ -6255,7 +6255,7 @@ snapshots:
       prism-theme-vars: 0.2.5
       theme-vitesse: 0.7.9
 
-  slidev-workspace@0.1.6(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3):
+  slidev-workspace@0.1.7(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3):
     dependencies:
       '@tailwindcss/vite': 4.1.12(rolldown-vite@7.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(yaml@2.8.1))
       '@vitejs/plugin-vue': 6.0.0(rolldown-vite@7.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(yaml@2.8.1))(vue@3.5.17(typescript@5.8.3))

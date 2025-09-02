@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "slidev-workspace": "^0.1.6"
+    "slidev-workspace": "^0.1.7"
   },
   "keywords": [],
   "author": "",
