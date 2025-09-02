@@ -27,8 +27,8 @@ importers:
   .:
     dependencies:
       slidev-workspace:
-        specifier: ^0.1.5
-        version: 0.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3)
+        specifier: file:/Users/leochiu.chiu/Desktop/slidev-workspace/packages/slidev-workspace/slidev-workspace-0.1.5.tgz
+        version: file:../slidev-workspace/packages/slidev-workspace/slidev-workspace-0.1.5.tgz(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3)
 
   slides/git-pr-ai:
     dependencies:
@@ -2721,8 +2721,9 @@ packages:
     resolution: {integrity: sha512-ndMD27+gUNYt9aXrb4/0vSBHKP007mpD2eCJppzhqXDG1DmN0Q6I6iFz+QvIjOPDKzzPjoYZbsWp6lPLJjgs9g==}
     engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
 
-  slidev-workspace@0.1.5:
-    resolution: {integrity: sha512-9chFS3+VfqCUdFzs6U7tTNey5gJfBYjefmTyaW0tZWIJu5lnQXkS4QWbmpOnpEfKV8brq5SLkTN4w1388YzlWQ==}
+  slidev-workspace@file:../slidev-workspace/packages/slidev-workspace/slidev-workspace-0.1.5.tgz:
+    resolution: {integrity: sha512-nzd8x9QnBT+3i2Ax85/RfpsH2FcsRIECQxLPdJPXKvyYJkU8G/wCIhcjixkLoJI/xS+g2ij4iJSbHcRAkdfUFw==, tarball: file:../slidev-workspace/packages/slidev-workspace/slidev-workspace-0.1.5.tgz}
+    version: 0.1.5
     hasBin: true
 
   source-map-js@1.2.1:
@@ -6255,7 +6256,7 @@ snapshots:
       prism-theme-vars: 0.2.5
       theme-vitesse: 0.7.9
 
-  slidev-workspace@0.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3):
+  slidev-workspace@file:../slidev-workspace/packages/slidev-workspace/slidev-workspace-0.1.5.tgz(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(typescript@5.8.3):
     dependencies:
       '@tailwindcss/vite': 4.1.12(rolldown-vite@7.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(yaml@2.8.1))
       '@vitejs/plugin-vue': 6.0.0(rolldown-vite@7.1.5(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.5.1)(yaml@2.8.1))(vue@3.5.17(typescript@5.8.3))
