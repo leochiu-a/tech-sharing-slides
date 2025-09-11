@@ -1,11 +1,11 @@
 ---
 theme: dracula
 class: text-center
-highlighter: shikiji
 lineNumbers: false
 transition: slide-left
 title: 使用 pnpm workspace 跟 Tuborepo 管理 monorepo
 mdc: true
+routerMode: hash
 ---
 
 # 使用 pnpm workspace 跟 Tuborepo 管理 monorepo

@@ -6,6 +6,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+routerMode: hash
 ---
 
 # 從 Next.js 的角度了解如何優化 Web Vital

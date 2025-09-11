@@ -4,6 +4,7 @@ background: https://cover.sli.dev
 title: TypeScript Workshop
 class: text-center
 transition: slide-left
+routerMode: hash
 ---
 
 # TypeScript Workshop
