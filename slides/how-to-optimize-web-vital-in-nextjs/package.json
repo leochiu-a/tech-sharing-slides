@@ -13,5 +13,8 @@
     "@slidev/theme-seriph": "catalog:",
     "slidev-theme-dracula": "catalog:",
     "vue": "catalog:"
+  },
+  "devDependencies": {
+    "playwright-chromium": "catalog:"
   }
 }

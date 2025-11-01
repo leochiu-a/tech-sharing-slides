@@ -8,3 +8,4 @@ catalog:
   "@slidev/theme-default": latest
   "@slidev/theme-seriph": latest
   "slidev-theme-dracula": ^0.2.0
+  "playwright-chromium": ^1.56.1

@@ -12,5 +12,8 @@
     "@slidev/theme-default": "catalog:",
     "@slidev/theme-seriph": "catalog:",
     "slidev-theme-dracula": "catalog:"
+  },
+  "devDependencies": {
+    "playwright-chromium": "catalog:"
   }
 }
