@@ -8,8 +8,6 @@ transition: slide-left
 mdc: true
 routerMode: hash
 author: Leo Chiu
-seoMeta:
-  ogImage: auto
 ---
 
 # 從 Next.js 的角度了解如何優化 Web Vital

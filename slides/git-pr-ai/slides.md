@@ -8,8 +8,6 @@ mdc: true
 colorSchema: dark
 routerMode: hash
 author: Leo Chiu
-seoMeta:
-  ogImage: auto
 ---
 
 # <div class="flex gap-4"><img src="https://leochiu-a.github.io/git-pr-ai/logo.svg" width="64"/> Git PR AI</div>

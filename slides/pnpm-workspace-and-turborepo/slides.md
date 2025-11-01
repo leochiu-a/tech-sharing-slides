@@ -7,8 +7,6 @@ title: 使用 pnpm workspace 跟 Tuborepo 管理 monorepo
 mdc: true
 routerMode: hash
 author: Leo Chiu
-seoMeta:
-  ogImage: auto
 ---
 
 # 使用 pnpm workspace 跟 Tuborepo 管理 monorepo
