@@ -15,9 +15,6 @@ catalogs:
     '@slidev/theme-seriph':
       specifier: latest
       version: 0.25.0
-    playwright-chromium:
-      specifier: ^1.56.1
-      version: 1.56.1
     slidev-theme-dracula:
       specifier: ^0.2.0
       version: 0.2.0
@@ -32,6 +29,10 @@ importers:
       slidev-workspace:
         specifier: ^0.4.2
         version: 0.4.2(@types/node@22.16.3)(esbuild@0.25.6)(jiti@2.6.1)(typescript@5.9.3)
+    devDependencies:
+      playwright-chromium:
+        specifier: ^1.56.1
+        version: 1.56.1
 
   slides/git-pr-ai:
     dependencies:
@@ -51,9 +52,6 @@ importers:
         specifier: 'catalog:'
         version: 3.5.17(typescript@5.9.3)
     devDependencies:
-      playwright-chromium:
-        specifier: 'catalog:'
-        version: 1.56.1
       prettier-plugin-slidev:
         specifier: ^1.0.5
         version: 1.0.5(prettier@3.6.2)
@@ -75,10 +73,6 @@ importers:
       vue:
         specifier: 'catalog:'
         version: 3.5.17(typescript@5.9.3)
-    devDependencies:
-      playwright-chromium:
-        specifier: 'catalog:'
-        version: 1.56.1
 
   slides/pnpm-workspace-and-turborepo:
     dependencies:
@@ -94,10 +88,6 @@ importers:
       slidev-theme-dracula:
         specifier: 'catalog:'
         version: 0.2.0
-    devDependencies:
-      playwright-chromium:
-        specifier: 'catalog:'
-        version: 1.56.1
 
   slides/typescript-workshop:
     dependencies:
@@ -113,10 +103,6 @@ importers:
       vue:
         specifier: 'catalog:'
         version: 3.5.17(typescript@5.9.3)
-    devDependencies:
-      playwright-chromium:
-        specifier: 'catalog:'
-        version: 1.56.1
 
 packages:
 

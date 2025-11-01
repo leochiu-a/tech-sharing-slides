@@ -15,7 +15,6 @@
     "vue": "catalog:"
   },
   "devDependencies": {
-    "prettier-plugin-slidev": "^1.0.5",
-    "playwright-chromium": "catalog:"
+    "prettier-plugin-slidev": "^1.0.5"
   }
 }

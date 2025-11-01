@@ -13,7 +13,5 @@
     "@slidev/theme-seriph": "catalog:",
     "vue": "catalog:"
   },
-  "devDependencies": {
-    "playwright-chromium": "catalog:"
-  }
+  "devDependencies": {}
 }

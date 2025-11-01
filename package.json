@@ -11,6 +11,9 @@
   "dependencies": {
     "slidev-workspace": "^0.4.2"
   },
+  "devDependencies": {
+    "playwright-chromium": "^1.56.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
