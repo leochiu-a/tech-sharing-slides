@@ -6,6 +6,8 @@ class: text-center
 transition: slide-left
 routerMode: hash
 author: Leo Chiu
+seoMeta:
+  ogImage: auto
 ---
 
 # TypeScript Workshop
