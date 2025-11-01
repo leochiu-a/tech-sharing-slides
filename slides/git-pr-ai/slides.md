@@ -7,6 +7,7 @@ transition: slide-left
 mdc: true
 colorSchema: dark
 routerMode: hash
+author: Leo Chiu
 ---
 
 # <div class="flex gap-4"><img src="https://leochiu-a.github.io/git-pr-ai/logo.svg" width="64"/> Git PR AI</div>

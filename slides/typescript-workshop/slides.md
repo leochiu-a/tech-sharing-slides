@@ -5,6 +5,7 @@ title: TypeScript Workshop
 class: text-center
 transition: slide-left
 routerMode: hash
+author: Leo Chiu
 ---
 
 # TypeScript Workshop
@@ -22,8 +23,8 @@ Leo Chiu 2025/02
 </div>
 
 ---
-transition: fade-out
----
+
+## transition: fade-out
 
 # Outline
 
@@ -53,17 +54,19 @@ h1 {
 <!--
 Here is another comment.
 -->
+
 ---
+
 layout: center
 transition: slide-up
+
 ---
 
 # What is TypeScript?
 
+---
 
----
-transition: slide-up
----
+## transition: slide-up
 
 # What is TypeScript?
 
@@ -83,8 +86,8 @@ transition: slide-up
 </div>
 
 ---
-transition: slide-up
----
+
+## transition: slide-up
 
 # 如何執行 TypeScript
 
@@ -100,18 +103,17 @@ transition: slide-up
 </v-clicks>
 
 ---
-transition: slide-up
----
 
-# Basic Type - 1 
+## transition: slide-up
 
+# Basic Type - 1
 
 <div v-click="1">
 
 - Primitives: `string`、`number`、`boolean`
 
 ```ts
-const str: string = 'Hello';
+const str: string = "Hello";
 const num: number = 123;
 const isFade: boolean = true;
 ```
@@ -138,8 +140,8 @@ const arr: string[] = ['Leo', 'Justin'、'Andy'];
 - Object: `interface`、`type`、`{}`
 
 ```ts
-const obj: { first: string } = { first: 'Andy'};
-const obj: Name = { first: 'Andy'};
+const obj: { first: string } = { first: "Andy" };
+const obj: Name = { first: "Andy" };
 ```
 
 </div>
@@ -152,10 +154,9 @@ const obj: Name = { first: 'Andy'};
 
 </div>
 
+---
 
----
-transition: slide-up
----
+## transition: slide-up
 
 # Basic Type - 2
 
@@ -167,6 +168,7 @@ transition: slide-up
 let u: undefined = undefined;
 let n: null = null;
 ```
+
 </div>
 
 <br>
@@ -188,7 +190,7 @@ type MyFunc = (): void;
 - `any` (`strict: true` 禁止寫 `any`)
 
 ```ts
-const obj: any = { a: '123' };
+const obj: any = { a: "123" };
 ```
 
 </div>
@@ -197,13 +199,13 @@ const obj: any = { a: '123' };
 
 <div v-click="4">
 
-- [exercise](https://www.typescriptlang.org/play/?#code/PTAEAcCcHsCMBsCmBbUBGUBaUhpqMHfyoALgIawDOogIW6DR6oKRKAUPQMbQB2ZhRpZAXKAN6h4pRPD4dIAS1YBzUAF9QAXlABteqE0ChIsaADkgfStAFp76ANKABuxeAFdEffcUmRww6foVmNWwcNiijoDWDoBTceZWNvaOhJDOrPry3lra-oEGgPcZgOl64dZ2DgYAFtCEop7y9AC6jCAQMAgooABMWLh4gMbWgKdygNByNLS9gDD-jCzsnLZkiJCsxMj5rLbIAZDKBgAyiND6zGwcoMQy+RLScipoAAynQ9uj45AAkqwAZtB8gmMTUzPiMUcKy-w+mjek2miCSWj2oPo5SAA) 
+- [exercise](https://www.typescriptlang.org/play/?#code/PTAEAcCcHsCMBsCmBbUBGUBaUhpqMHfyoALgIawDOogIW6DR6oKRKAUPQMbQB2ZhRpZAXKAN6h4pRPD4dIAS1YBzUAF9QAXlABteqE0ChIsaADkgfStAFp76ANKABuxeAFdEffcUmRww6foVmNWwcNiijoDWDoBTceZWNvaOhJDOrPry3lra-oEGgPcZgOl64dZ2DgYAFtCEop7y9AC6jCAQMAgooABMWLh4gMbWgKdygNByNLS9gDD-jCzsnLZkiJCsxMj5rLbIAZDKBgAyiND6zGwcoMQy+RLScipoAAynQ9uj45AAkqwAZtB8gmMTUzPiMUcKy-w+mjek2miCSWj2oPo5SAA)
 
 </div>
 
 ---
-transition: slide-up
----
+
+## transition: slide-up
 
 # interface & type
 
@@ -219,7 +221,7 @@ interface Person {
 
 const person: Person = {
   name: "John",
-  age: 30
+  age: 30,
 };
 ```
 
@@ -237,7 +239,7 @@ interface Employee extends Person {
 const employee: Employee = {
   name: "Alice",
   age: 28,
-  jobTitle: "Developer"
+  jobTitle: "Developer",
 };
 ```
 
@@ -259,6 +261,7 @@ let value: StringOrNumber;
 value = "Hello";
 value = 123;
 ```
+
 </div>
 
 <div v-click="2">
@@ -274,7 +277,7 @@ type FlyingAnimal = Animal & Bird;
 // birder 必須同時存在 name 跟 canFly，不然會有 TS error
 const bird: FlyingAnimal = {
   name: "Eagle",
-  canFly: true
+  canFly: true,
 };
 ```
 
@@ -299,14 +302,13 @@ const addOptional: AddOptionalFunction = (a, b = 0) => {
   return a + b;
 };
 
-console.log(addOptional(5));    // 輸出 5
+console.log(addOptional(5)); // 輸出 5
 console.log(addOptional(5, 3)); // 輸出 8
 ```
 
 - [exercise](https://www.typescriptlang.org/play/?#code/PTAEiztRK-0X8VHh9Ro9UKRKoDiAnAphgLgSwHYDmAUNgJ4AOGqmOBJxIogZ9qB-zqIbdqHMQMYB7fAGdunLNgBcNCfVABeUAAp8AQwC2GADShVhaooCMABgCUCgHygA3sVChM2AK5p8oAAYAJDABsfAnQASazVNAF8AQlAAQX0g6z0MMPcAbmIwtMYwQBo7QDMoji4eWH4hYQEfDAA6f0IlcRwlACJon1w+DEbTUxT7JkAOeMAvxVBG7z8AmNb2qNjtUBNGkpFyqpq6riaAIQEAI0adEzNu0H6hkd9-HS3t6bi542NGoA)
 
-
---- 
+---
 
 # Vue - defineProps
 
@@ -332,13 +334,12 @@ props.bar // number | undefined
 
 ```ts
 const props = defineProps<{
-  foo: string
-  bar?: number
-}>()
+  foo: string;
+  bar?: number;
+}>();
 ```
 
 </div>
-
 
 ---
 
@@ -346,10 +347,10 @@ const props = defineProps<{
 
 <div v-click="1">
 
-- runtime 
+- runtime
 
 ```ts
-const emit = defineEmits(['change', 'update'])
+const emit = defineEmits(["change", "update"]);
 ```
 
 </div>
@@ -360,9 +361,9 @@ const emit = defineEmits(['change', 'update'])
 
 ```ts
 const emit = defineEmits<{
-  (e: 'change', id: number): void
-  (e: 'update', value: string): void
-}>()
+  (e: "change", id: number): void;
+  (e: "update", value: string): void;
+}>();
 ```
 
 </div>
@@ -373,9 +374,9 @@ const emit = defineEmits<{
 
 ```ts
 const emit = defineEmits<{
-  change: [id: number]
-  update: [value: string]
-}>()
+  change: [id: number];
+  update: [value: string];
+}>();
 ```
 
 </div>
@@ -385,7 +386,6 @@ const emit = defineEmits<{
 - [exercise](https://play.vuejs.org/#eNqFU82O0zAQfpWRhZRW6o/4OWXTamHVA0jAaukNc0jTSddbx45sp7SqetgriGeAK+KKxIHnYYG3YOykf9Kye0r8zTfjb8bfrNnTsuwtKmQxS2xmROnAoqtKkKmaDThzlrMhV6IotXGwBoM5bCA3uoCI0qJd6EwXZYP3+v7gq0YnXHGVaWUdZJUxqNw4ncDAl0msM0LNhq32nuPSiaXoW66A7pLpBGUM0c3Xz7++fI86sEhlhQSkwpQyFSqCTeeY+vv625+fHw6oztzKu/n04+/1xwPey4sxsbh6txdzmaqpxDMpsnktukXy2jAYwtoX2/fTC0WIQHGuqEjSr0dJg6ODw4LUOqQTQBLm5P8AYt+unzF9OKuxU626mb+ySyjFjkXUrD5VSvoHZVmH3olE52LWu7Ja0WMGiZxldJuQaF6XTlBTnMW1eB9LpdTvXwTMmQrDhELOJWbzW/Aru/QYZ+cGLZoFcraLudTM0NXh0ZtXuKT/XbDQ00oS+47gBVotK6+xpj2rfNvmgBfUPg9eI9eM7WjpUNltU0dCvbGyIMbDHq2fnzOypJ///yay7+Jx70nIo+ek4W7tfM+STDEXCs+NLm2y3pCxg/trdFQI16B3+2MqFmDdSiLVnQpLkVUMucTlCczSMoaHj0p6hsBt2Iturg2xBRUCocIScQbxHFcNWht0l0V5k8o5reA0WI1YD5D0tSKttk6j1fCZ7YMk2p91AHthi2BD02nK9et6W1V9klV30/wdu3XzD4aYfi8=)
 
 </div>
-
 
 ---
 
@@ -401,10 +401,10 @@ interface Todo {
   description: string;
   completed: boolean;
 }
- 
+
 // 我們希望 TodoPreview 只包含了 Todo 的 title 跟 completed 屬性
 type TodoPreview = Pick<Todo, "title" | "completed">;
- 
+
 const todo: TodoPreview = {
   title: "Clean room",
   completed: false,
@@ -421,12 +421,12 @@ const todo: TodoPreview = {
 
 ```ts {8-9|all}
 type CatName = "miffy" | "boris" | "mordred";
- 
+
 interface CatInfo {
   age: number;
   breed: string;
 }
- 
+
 // ｃats 這個物件的 Keys 為 CatName，並且每個隻貓都有同樣的 CatInfo
 const cats: Record<CatName, CatInfo> = {
   miffy: { age: 10, breed: "Persian" },
@@ -472,7 +472,7 @@ function greet(name: string | null) {
   console.log("Hello, " + name!.toUpperCase());
 }
 
-greet("John"); 
+greet("John");
 ```
 
 <div v-click="2">
@@ -483,15 +483,14 @@ greet("John");
 const people: Person[] = [
   { name: "Alice", age: 30 },
   { name: "Bob", age: 25 },
-  { name: "Charlie", age: 35 }
+  { name: "Charlie", age: 35 },
 ];
 
-let person = people.find(p => p.name === "Bob")!;
-console.log(person.age);  // 輸出: 25
+let person = people.find((p) => p.name === "Bob")!;
+console.log(person.age); // 輸出: 25
 ```
 
 </div>
-
 
 ---
 
@@ -505,14 +504,13 @@ console.log(person.age);  // 輸出: 25
 let value: string | null = "Hello, world!";
 
 if (value !== null) {
-  console.log(value.length);  // 可以安全地使用 string 的方法
+  console.log(value.length); // 可以安全地使用 string 的方法
 }
 ```
 
 </div>
 
 <br>
-
 
 <div v-click="2">
 
@@ -521,9 +519,9 @@ if (value !== null) {
 ```ts
 function printLength(value: string | number) {
   if (typeof value === "string") {
-    console.log(value.length);  // 可以安全地使用 string 的方法
+    console.log(value.length); // 可以安全地使用 string 的方法
   } else {
-    console.log(value.toFixed(2));  // 可以安全地使用 number 的方法
+    console.log(value.toFixed(2)); // 可以安全地使用 number 的方法
   }
 }
 ```
@@ -533,7 +531,6 @@ function printLength(value: string | number) {
 ---
 
 # type narrowing 搭配物件使用的進階技巧
-
 
 - 這個技巧不管是在 function 還是在 vue 中都很實用
 
@@ -568,20 +565,19 @@ if (message.type === 'text') {
 - Type Annotation
 
 ```ts
-const value = ref<number>(1)
+const value = ref<number>(1);
 ```
 
 - Type Inference：
 
 ```ts
-const value = ref(1)
+const value = ref(1);
 ```
 
-|type annotation|type inference|
-|-|-|
-|適用於複雜的情境，ex: 設計多元篩選器的 filter 型別|適用於簡單的情境，ex: 一個 checkbox 的 boolean|
-|較為瑣碎，但 robust|有可能會無法精準推斷，例如物件的 key 通常都是推斷成 string|
-
+| type annotation                                    | type inference                                             |
+| -------------------------------------------------- | ---------------------------------------------------------- |
+| 適用於複雜的情境，ex: 設計多元篩選器的 filter 型別 | 適用於簡單的情境，ex: 一個 checkbox 的 boolean             |
+| 較為瑣碎，但 robust                                | 有可能會無法精準推斷，例如物件的 key 通常都是推斷成 string |
 
 ---
 
@@ -642,14 +638,13 @@ const emit = defineEmits<{
   3. [TypeScript 新手指南](https://willh.gitbook.io/typescript-tutorial)
 
 ---
-layout: center
----
+
+## layout: center
 
 # Q&A
 
+---
 
----
-layout: center
----
+## layout: center
 
 # Thanks you
