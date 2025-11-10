@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "slidev-workspace": "^0.6.1"
+    "slidev-workspace": "^0.7.0"
   },
   "devDependencies": {
     "playwright-chromium": "^1.56.1"
